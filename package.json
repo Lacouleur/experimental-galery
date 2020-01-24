@@ -3,14 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.0",
+    "emotion": "^10.0.23",
+    "emotion-theming": "^10.0.19",
+    "eslint-plugin-jest": "^23.0.4",
+    "jest": "^25.1.0",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "webpack": "^4.41.0"
   },
   "scripts": {
+    "test:nowatch": "react-scripts test --watchAll=false",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -18,7 +28,9 @@
     "lint": "eslint . "
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "airbnb"
+    ]
   },
   "browserslist": {
     "production": [
@@ -33,7 +45,15 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.18.0"
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "jest-emotion": "^10.0.17",
+    "lint": "^0.7.0",
+    "react-test-renderer": "^16.12.0"
   }
 }
